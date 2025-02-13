@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variables</title>
+    <style>
+        :root{
+            --nav:gray;
+            --foot:black;
+            --bodybg:yellow;
+            --col1:orange;
+            --col2:white;
+            --col3:lightgreen;
+        }
+        .header{
+            height: 20vh;
+            background-color: var(--nav,blue);
+        }
+        .body{
+            height:60vh;
+            background-color: var(--bodybg,blue);
+            padding:20px;
+        }
+        .col1,.col2,.col3{
+            height:100%;
+            width: 33.33%;
+            float: left;
+            
+        }
+        .footer{
+            height: 20vh;
+            background-color: var(--foot);
+        }
+    </style>
+</head>
+<body>
+    <div class="header"></div>
+    <div class="body">
+        <div class="col1" style="background-color: var(--col1);"></div>
+        <div class="col2" style="background-color: var(--col2);"></div>
+        <div class="col3" style="background-color: var(--col3);"></div>
+    </div>
+    <div class="footer"></div>
+    <!--variables can be of any propery-->
+</body>
+</html>
