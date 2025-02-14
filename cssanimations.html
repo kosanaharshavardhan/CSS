@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        @keyframes incheiwid{
+            from{
+                height:100px;
+                width:100px;
+            }
+            to{
+                height: 200px;
+                width:200px;
+            }
+        }
+        .box{
+            animation-duration: 2s;
+            border: 2px solid black;
+            height: 100px;
+            width: 100px;
+            animation-name:incheiwid;
+            animation-iteration-count:infinite ;
+            animation-direction:reverse;
+            animation-timing-function: ease;
+        }
+    </style>
+</head>
+<body>
+        <div class="box"></div>
+</body>
+</html>
