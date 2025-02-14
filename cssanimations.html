@@ -15,19 +15,75 @@
                 width:200px;
             }
         }
+       @keyframes bounce{
+        0%{
+            transform:translate(0px,-100px);
+        }
+        50%{
+            transform: translate(50vw,0px);
+        }
+        100%{
+            transform: translate(100vw,-100px);
+        }
+       }
+       @keyframes x {
+        from{
+            transform: translateX(0px);
+        }
+        to{
+            transform: translateX(100vw);
+        }
+       }
+       
         .box{
             animation-duration: 2s;
             border: 2px solid black;
             height: 100px;
             width: 100px;
             animation-name:incheiwid;
-            animation-iteration-count:infinite ;
+            animation-iteration-count:0;
             animation-direction:reverse;
             animation-timing-function: ease;
+            z-index: 1;
+        }
+        .ball{
+            display: inline-block;
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            border: 2px solid black;
+            border-radius: 50%;
+            animation-name: x;
+            animation-timing-function: linear;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;            
+            
+        }
+        .blue{
+            display: inline-block;
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            border: 2px solid black;
+            border-radius: 50%;
+            animation-name: x;
+            animation-timing-function: linear;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;    
         }
     </style>
+
 </head>
 <body>
         <div class="box"></div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="ball"></div>
+        <div class="blue"></div>    
+        <hr>
 </body>
 </html>
