@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        .box{
+            height: 100px;
+            width: 200px;
+            background-color: blue;
+            border: 2px solid black;
+            font-size: 2em;
+            text-align: center;
+            padding: 70px 0px;
+            box-sizing: border-box;
+        }
+        .boxparent{
+            display: flex;
+            background-color: red;
+            padding: 10px;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            /*flexflow=flexwrap+flexdirectiom*/
+            height: 500px;
+            justify-content: center;
+           align-content: baseline;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="boxparent">
+    <div class="box" style="flex-grow: 1;">1</div>
+    <div class="box" style="flex-shrink: 2  ;">2</div>
+    <div class="box" style="flex-basis: 20px;align-self:flex-end;">3</div>
+    <div class="box">4</div>
+    <div class="box"style="order:2;" >5</div>
+    <div class="box" style="order:1;">6</div>
+   
+    </div>
+</body>
+</html>
