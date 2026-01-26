@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradients</title>
+    <style>
+        .LR{
+            /* background:linear-gradient(direction,color1,color2); */
+            background: linear-gradient(90deg,red 100px,blue);
+        }
+        .RR{
+            background: radial-gradient(red,blue);
+        }
+        .CR{
+            background: conic-gradient(red,blue,green);
+        }
+    </style>
+</head>
+<body>
+    <h1>Linear Gradient:
+    </h1>
+    <div class="LR" style="height: 200px; width: 200px; border: 2px solid black;"></div>
+    <h1>Radial Gradient:
+    </h1>
+    <div class="RR" style="height: 200px; width: 200px; border: 2px solid black;"></div>
+    <h1>Conical Gradient:
+    </h1>
+    <div class="CR" style="height: 200px; width: 200px; border: 2px solid black;"></div>
+
+</body>
+</html>
