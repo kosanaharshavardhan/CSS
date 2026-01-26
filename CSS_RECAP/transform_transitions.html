@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cl{
+            height: 200px;
+            width: 200px;
+            background-color: teal;
+            /* transform:rotate(45deg); */
+            transform: translate(-50%,-50%);
+            position: relative;
+            left: 50%;
+            top: 50%;
+        }
+        body{
+            height: 100vh;
+        }
+        .smmoth{
+            height: 250px;
+            width: 250px;
+            background-color: yellow;
+            transition-property: background-color, transform;
+            transition-duration: 3s;
+            transition-timing-function: ease;
+            transition-delay: 1s;
+           /* transform: translate(100px,100px); */
+        }
+        .smmoth:hover{
+            background-color: red;
+            transform: translate(100px,100px);
+        }   
+    </style>
+</head>
+<body>
+    <div class="cl"></div>
+    <div class="smmoth"></div>
+</body>
+</html>
