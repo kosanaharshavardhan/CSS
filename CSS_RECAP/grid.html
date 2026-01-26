@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .p{
+            height: 50vh;
+            width: 50vw;
+            background-color: rgba(255,255,0,0.2);
+            display: grid;
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            grid-template-areas: "nav nav nav"
+                                  "main main side"
+                                  "footer footer footer";
+                                                    
+            }
+        .red{
+            height: 100px;
+            
+            background-color: pink;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2em;
+        }
+        /* body{
+            display: grid;
+            grid-template-columns: auto auto auto;
+        } */
+    </style>
+</head>
+<body>
+    <!-- <div class="red">1</div>
+     <div class="red">2</div>
+      <div class="red">3</div>
+       <div class="red" style="grid-row: 3/4; grid-column: 3/4;">4</div>
+        <div class="red">5</div>
+         <div class="red">6</div>
+          <div class="red" style="background-color: red; grid-area: 2/2/3/3;">7</div>
+           <div class="red">8</div>
+            <div class="red">9</div>
+             <div class="red">10</div> -->
+
+
+             <hr>
+             <hr>
+             <div class="p">
+                <div class="red" style="grid-area: nav">1</div>
+                <div class="red" style="grid-area: main">2</div>
+                <div class="red" style="grid-area: footer">3</div>
+                <div class="red" style="grid-area: side">4</div>
+             </div>
+</body>
+</html>
